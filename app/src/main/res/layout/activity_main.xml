@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:coimntext=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="always">
+
+
+
+            <TextView
+                android:id="@+id/biodata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESUME MAKER"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/personaldetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Detail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:textSize="20dp"
+                android:layout_below="@+id/biodata"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father Name   :- "
+                android:layout_marginTop="15dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/personaldetail"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+
+
+            <EditText
+                android:id="@+id/hintfather2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Father Name"
+                android:textSize="15dp"
+                android:background="#C3D2DD"
+                android:layout_below="@+id/personaldetail"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@id/fullname" />
+
+
+
+            <TextView
+                android:id="@+id/birthdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth    :- "
+                android:layout_marginTop="40dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/personaldetail"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+
+
+            <EditText
+                android:id="@+id/hintbdr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fullname"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/birthdate"
+                android:background="#C3D2DD"
+                android:hint="Birth Date"
+                android:inputType="date"
+                android:paddingLeft="5dp"
+                android:textSize="15dp" />
+
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender             :- "
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/birthdate"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+
+
+
+            <EditText
+                android:id="@+id/hintge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Gender"
+                android:textSize="15dp"
+                android:background="#C3D2DD"
+                android:layout_below="@id/birthdate"
+                android:layout_toRightOf="@id/gender"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/placeofbirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nationality       :- "
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/gender"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:textStyle="italic"/>
+
+
+
+
+
+            <EditText
+
+                android:id="@+id/hintbirthplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/placeofbirth"
+                android:background="#C3D2DD"
+                android:hint="Enter Nationality"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="15dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marital Status :- "
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/placeofbirth"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+
+
+
+            <EditText
+                android:id="@+id/hintweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placeofbirth"
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/weight"
+                android:background="#C3D2DD"
+                android:hint="Enter Marital Status"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="15dp" />
+
+
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weight"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@id/hintweight"
+                android:text="Languages      :- "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+
+
+            <EditText
+                android:id="@+id/hintla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weight"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/height"
+                android:background="#C3D2DD"
+                android:hint="Enter Languages Knowns "
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textSize="15dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Hobbies          :- "
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/height"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+
+
+
+            <EditText
+                android:id="@+id/hintho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Hobbies"
+                android:textSize="15dp"
+                android:background="#C3D2DD"
+                android:layout_below="@+id/height"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@id/education"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/occupation"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/education"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:text=" Place               :- "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+
+
+
+            <EditText
+                android:id="@+id/hintpla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Place"
+                android:textSize="15dp"
+                android:background="#C3D2DD"
+                android:layout_below="@+id/education"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@id/education"
+                android:layout_marginTop="5dp"/>
+
+
+
+            <TextView
+                android:id="@+id/selfdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self Detail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_below="@+id/occupation"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/selfname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Name      :- "
+                android:layout_marginTop="6dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/selfdetail"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+
+            <EditText
+                android:id="@+id/hintselfna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                android:textSize="15dp"
+                android:background="#C3D2DD"
+                android:layout_below="@+id/selfdetail"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@id/selfname"
+                android:layout_marginTop="6dp"/>
+
+
+            <TextView
+                android:id="@+id/emailid"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selfname"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Email                :- "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+
+
+            <EditText
+                android:id="@+id/hintem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Email"
+                android:textSize="15dp"
+                android:background="#C3D2DD"
+                android:layout_below="@+id/selfname"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@id/emailid"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:id="@+id/addres"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailid"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Address           :- "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+
+
+            <EditText
+                android:id="@+id/hintadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Address"
+                android:textSize="15dp"
+                android:background="#C3D2DD"
+                android:layout_below="@+id/emailid"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@id/addres"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/careerobj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Experiencr"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/occupation"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="120dp"/>
+
+
+            <TextView
+                android:id="@+id/or."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="organization    :- "
+                android:layout_marginTop="6dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/careerobj"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+
+
+            <EditText
+                android:id="@+id/or.ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/or."
+                android:layout_marginLeft="-2dp"
+                android:layout_marginTop="-18dp"
+                android:layout_toRightOf="@id/or."
+                android:background="#C3D2DD"
+                android:hint="Enter Your organization"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/ds."
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/or."
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="designation     :- "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+
+
+
+            <EditText
+                android:id="@+id/ds.ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ds."
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-20dp"
+                android:layout_toRightOf="@id/ds."
+                android:background="#C3D2DD"
+                android:hint="Enter Your designation"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/dr."
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ds."
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="duration           :- "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+
+
+
+            <EditText
+                android:id="@+id/dr.ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dr."
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-20dp"
+                android:layout_toRightOf="@id/dr."
+                android:background="#C3D2DD"
+                android:hint="Enter Your duration"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/education."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/dr.ans"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/le."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="last education :- "
+                android:layout_marginTop="6dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/education."
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+
+
+
+            <EditText
+                android:id="@+id/le.ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/or."
+                android:layout_marginLeft="-1dp"
+                android:layout_marginTop="95dp"
+                android:layout_toRightOf="@id/le."
+                android:background="#C3D2DD"
+                android:hint="entar last education"
+                android:inputType="text"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+
+
+            <TextView
+                android:id="@+id/lec"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/le."
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="education city :- "
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/lec.ans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lec"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-19dp"
+                android:layout_toRightOf="@id/ds."
+                android:background="#C3D2DD"
+                android:hint="entar last education city"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="150dp"
+                android:layout_marginTop="29dp"
+                android:backgroundTint="#9C27B0"
+                android:layout_below="@+id/lec"
+                android:text="next"
+                android:textSize="12dp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
